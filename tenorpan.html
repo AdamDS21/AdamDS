@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel= "stylesheet" type= "text/css" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>	
+
+	<body>
+		<div class = "logo">
+			<img src="images/logo.jpeg" height= "100%" width= "160">
+		</div>
+		<div class = "steelpanheader">
+			<h1> Steel Pans : Tenor Pan </h1>
+		</div>
+		<div class= "navigation">
+			<center><ul>
+						<li><a href="#home">Home</a></li>
+						<br>
+						<br>
+						<li><a href="#steelpans">Steel Pans</a></li>
+						<br>
+						<br>
+						<li><a href="#contact">Contact</a></li>
+						<br>
+						<br>
+						<li><a href="#about">About</a></li>
+					</ul> </center>
+		</div>
+		
+		<div class = "tenor">
+			<div class = "blank">
+			</div>
+			<div class = "tenorpan">
+				<img src="images/tenorpan.jpeg" height= "100%" width= "250">
+				<br>
+			    <br>                                 
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select a Note
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						<audio id="sound1" src="audio/a4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound1').play();">A4
+						</button>	
+	
+						<audio id="sound2" src="audio/a5.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound2').play();">A5
+						</button>
+		
+						<audio id="sound3" src="audio/b4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound3').play();">B4
+						</button>
+  
+						<audio id="sound4" src="audio/b5.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound4').play();">B5
+						</button>
+					</ul>
+				</div>
+			</div>
+			</div> 
+			<div class = "blank1">
+			</div>
+			<div class = "blank2">
+			</div>
+	</body>
+</html>
