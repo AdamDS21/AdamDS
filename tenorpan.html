@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<link rel= "stylesheet" type= "text/css" href="styles.css">
+		<script src="scripts.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>	
-
+	<style>
+		body{
+			background-color: #000000;
+		}
+	</style>
 	<body>
 		<div class = "logo">
 			<img src="images/logo.jpeg" height= "100%" width= "160">
@@ -16,18 +21,23 @@
 			<h1> Steel Pans : Tenor Pan </h1>
 		</div>
 		<div class= "navigation">
-			<center><ul>
-						<li><a href="#home">Home</a></li>
-						<br>
-						<br>
-						<li><a href="#steelpans">Steel Pans</a></li>
-						<br>
-						<br>
-						<li><a href="#contact">Contact</a></li>
-						<br>
-						<br>
-						<li><a href="#about">About</a></li>
-					</ul> </center>
+			<nav class="vertical">
+				<ul>
+					<li><a href="">Home</a></li>
+					<br>
+					<li><a href="#">Steel Pans</a>
+						<ul>
+							<li><a href="tenorpan.html">Tenor Pan</a></li>
+							
+							<li> <a href="basspan.html">Bass Pan</a></li>
+						</ul>
+					</li>
+					<br>
+					<li><a href="">Contact</a></li>
+					<br>
+					<li><a href="">About Us</a></li>
+				</ul>
+			</nav>
 		</div>
 		
 		<div class = "tenor">
@@ -41,20 +51,92 @@
 					<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select a Note
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						<audio id="sound1" src="audio/a4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound1').play();">A4
+						<audio id="sound1" src="tenoraudio/fsharp4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound1').play();">F#4
 						</button>	
 	
-						<audio id="sound2" src="audio/a5.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound2').play();">A5
+						<audio id="sound2" src="tenoraudio/b4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound2').play();">B4
 						</button>
 		
-						<audio id="sound3" src="audio/b4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound3').play();">B4
+						<audio id="sound3" src="tenoraudio/e4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound3').play();">E4
 						</button>
   
-						<audio id="sound4" src="audio/b5.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound4').play();">B5
+						<audio id="sound4" src="tenoraudio/a4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound4').play();">A4
+						</button>
+						
+						<audio id="sound5" src="tenoraudio/d4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound5').play();">D4
+						</button>
+						
+						<audio id="sound6" src="tenoraudio/g4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound6').play();">G4
+						</button>
+						
+						<audio id="sound7" src="tenoraudio/c4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound7').play();">C4
+						</button>
+						
+						<audio id="sound8" src="tenoraudio/f4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound8').play();">F4
+						</button>
+						
+						<audio id="sound9" src="tenoraudio/bb4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound9').play();">Bb4
+						</button>
+						
+						<audio id="sound10" src="tenoraudio/gsharp4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound10').play();">G#4
+						</button>
+						
+						<audio id="sound11" src="tenoraudio/csharp4.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound11').play();">C#4
+						</button>
+						
+						<audio id="sound12" src="tenoraudio/fsharp3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound12').play();">F#3
+						</button>	
+	
+						<audio id="sound13" src="tenoraudio/b3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound13').play();">B3
+						</button>
+		
+						<audio id="sound14" src="tenoraudio/e3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound14').play();">E3
+						</button>
+  
+						<audio id="sound15" src="tenoraudio/a3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound15').play();">A3
+						</button>
+						
+						<audio id="sound16" src="tenoraudio/d3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound16').play();">D3
+						</button>
+						
+						<audio id="sound17" src="tenoraudio/g3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound17').play();">G3
+						</button>
+						
+						<audio id="sound18" src="tenoraudio/c3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound18').play();">C3
+						</button>
+						
+						<audio id="sound19" src="tenoraudio/f3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound19').play();">F3
+						</button>
+						
+						<audio id="sound20" src="tenoraudio/bb3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound20').play();">Bb3
+						</button>
+						
+						<audio id="sound21" src="tenoraudio/gsharp3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound21').play();">G#3
+						</button>
+						
+						<audio id="sound22" src="tenoraudio/csharp3.wav" preload="auto"></audio>
+						<button onclick="document.getElementById('sound22').play();">C#3
 						</button>
 					</ul>
 				</div>
