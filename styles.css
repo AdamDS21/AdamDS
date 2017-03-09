@@ -2,7 +2,7 @@
 	border-style: solid;
     padding: 25px; 
     width: 30%;
-	height:180px;
+	height:220px;
 	text-align: center;
 	display: inline-block;
 	float:left;
@@ -10,14 +10,13 @@
 	background-color:#FFFFFF;
 }
 .steelpanheader{
-	border-style: solid;
-    padding: 25px; 
-    width: 68%;
-	height:180px;
-	text-align: center;
-	display: inline-block;
+	border-style: Solid;
+    padding: 20px; 
+    width: 70%;
+	height:220px;
 	float:left;
 	background-color:#FFFFFF;
+	overflow: hidden;
 }
 .navigation{
 	border-style: solid;
@@ -52,7 +51,7 @@ li a:hover {
 .tenor{
 	border-style: solid;
     padding: 25px; 
-    width: 68%;
+    width: 70%;
 	height:500px;
 	text-align: center;
 	display: inline-block;
@@ -145,4 +144,19 @@ nav.vertical li:hover > ul{
   opacity:1;
   transform: translateX(0px);
 }
+
+.carousel{           
+    background: #2f4357;
+    margin-top: 20px;
+	width: 70%;
+	height:400px;
+}
+.carousel .item img{    
+    margin: 0 auto;
+	height: auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
 
