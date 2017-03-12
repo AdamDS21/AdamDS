@@ -4,7 +4,6 @@
     width: 30%;
 	height:220px;
 	text-align: center;
-	display: inline-block;
 	float:left;
 	overflow: hidden;
 	background-color:#FFFFFF;
@@ -22,37 +21,17 @@
 	border-style: solid;
     padding: 25px; 
     width: 30%;
-	height:500px;
+	height:550px;
 	text-align: center;
-	display: inline-block;
 	float:left;
 	background-color:#1E90FF;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    background-color: #f1f1f1;
-}
 
-li a {
-    display: block;
-    color: #000;
-    padding: 12px 20px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-li a:hover {
-    background-color: #555;
-    color: white;
-}
 .tenor{
 	border-style: solid;
     padding: 25px; 
     width: 70%;
-	height:500px;
+	height:550px;
 	text-align: center;
 	display: inline-block;
 	float:left;
@@ -101,7 +80,7 @@ body{font:16px/1 sans-serif}
 /*VERTICAL MENU*/
 nav.vertical{
   position:relative;
-  width:200px;
+  width:300px;
 }
 
 /* ALL UL */
@@ -157,6 +136,10 @@ nav.vertical li:hover > ul{
 }
 .bs-example{
 	margin: 20px;
+}
+.carousel-inner{
+	height: 400px;
+	margin: auto;
 }
 
 
