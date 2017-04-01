@@ -1,3 +1,70 @@
+
+.form{
+border-style:hidden;
+padding:30px;
+width:97%;
+height:800px;
+margin: 44;
+color: Red;
+font-size:19px;
+font-weight:bold;
+text-align:center;	
+	
+	
+	
+}	
+	
+.ContactHeader{
+text-align:center;
+color: Red;
+font-weight:bold;
+}	
+	
+	
+
+	
+
+
+
+.Aboutheading{
+border-style:hidden;
+padding:18px;
+width:92%;
+height:1500px;
+text-align:center;
+color:Tomato  ;
+font-size:25px;
+font-weight:bold;
+	
+}
+.Tenorvideo{
+padding:20px;
+border-style:hidden;
+width:97.5%;
+height:1500px;
+color:GoldenRod;
+}
+.abouttenorpan{
+border-style:hidden;
+padding:18px;
+text-align:center;
+float:right;
+color: green;
+width:60%;
+height:500px;
+
+}
+.abouttenorpan1{
+border-style:hidden;
+padding:18px;
+text-align:center;
+float: left;
+color: green;
+width: 60%;
+height:500px;
+
+}
+
 .logo{
 	border-style: hidden;
     padding: 25px; 
@@ -15,6 +82,17 @@
 	float:left;
 	overflow: hidden;
 }
+.steelpanheader1{
+	border-style: hidden;
+    padding: 20px; 
+    width: 70%;
+	height:200px;
+	float:left;
+	overflow: hidden;
+	font-size:24;
+	font-weight:bold;
+	color:Red;
+}
 .navigation{
 	border-style: hidden;
     padding: 25px; 
@@ -28,7 +106,7 @@
 	border-style: hidden;
     padding: 25px; 
     width: 70%;
-	height:550px;
+	height:1000px;
 	text-align: center;
 	display: inline-block;
 	float:left;
@@ -37,7 +115,7 @@
 	border-style: none;
     padding: 25px; 
     width: 28%;
-	height:250px;
+	height:230px;
 	text-align: center;
 	display: inline-block;
 	float:left;
@@ -127,8 +205,14 @@ nav.vertical li:hover > ul{
 	margin: 20px;
 }
 .carousel-inner{
-	height: 500px;
+	height: 450px;
 	margin: auto;
 }
 
-
+/* the backgrounf img for the body of all pages */
+body
+{
+	background-image:url("images/music.jpg");
+	 background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

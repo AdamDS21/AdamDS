@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel= "stylesheet" type= "text/css" href="styles.css">
+		<script src="scripts.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>	
+	<body>
+		<div class = "logo">
+			<img src="images/logo.jpeg" height= "100%" width= "160">
+		</div>
+			
+		<div class = "steelpanheader1">
+		<center><h1>Contact Us </h1><center>
+		</div>
+		<div class= "navigation">
+			<nav class="vertical"> 
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<br>
+					<li><a href="#">Steel Pans</a>
+						<ul>
+							<li><a href="tenorpan.html">Tenor Pan</a></li>
+						</ul>
+					</li>
+					<br>
+					<li><a href="contact.html">Contact</a></li>
+					<br>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+
+<div class ="ContactHeader">
+<h2>Contact Form</h2>
+</div>
+<div class = "form">
+<form name="contactus" id="contactus"  action="submitaboutus.html" method="POST" onsubmit="return aboutForm()">
+					<br>
+					&nbsp &nbsp  <label for="username"> Name:</label><br>
+					&nbsp &nbsp  <input type="text" name="name" id="name"><br><br>
+					&nbsp &nbsp <label for="address">Address:</label> <br>
+					&nbsp &nbsp <input type="text" name="address" id="address"><br><br>
+					&nbsp &nbsp <label for="email">Your Email:</label><br>
+					&nbsp &nbsp <input type="text" name="email" id="email"><br><br>
+					&nbsp &nbsp <label for="number">Phone Number:</label><br>
+					&nbsp &nbsp <input type="text" name="number" id="number"><br><br>
+					&nbsp &nbsp <label for="comments">Comments:</label><br>
+					&nbsp &nbsp <textarea name="text" id="comments" ></textarea> <br><br>
+					&nbsp &nbsp <input type="reset" value="Clear" class="formbutton"><br><br><br>
+					&nbsp &nbsp <input type="submit" value="Submit" class="formbutton"><br><br><br>
+					<br>
+					<br>
+					</form>
+		</div>
+		
+</body>
+</html>

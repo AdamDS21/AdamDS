@@ -1,166 +1,391 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel= "stylesheet" type= "text/css" href="styles.css">
+<html> <!--Open html-->
+	<head> <!--Open head-->
+		<link rel= "stylesheet" type= "text/css" href="styles.css"> <!--External stylesheet-->
 		<script src="scripts.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>	
-	<body>
-		<div class = "logo">
-			<img src="images/logo.jpeg" height= "100%" width= "160">
-		</div>
-		<div class = "steelpanheader">
-			<center><img src="images/tenorpanheader.jpg" alt="Tenor Pan 1" width= "640px"><center>
-		</div>
-		<div class= "navigation">
-			<nav class="vertical">
-				<ul>
-					<li><a href="home.html">Home</a></li>
+	</head>	<!--Close head-->
+	<body> <!--Open body-->
+		<div class = "logo"> <!--Logo div-->
+			<img src="images/logo.jpeg" height= "100%" width= "160"> <!--Logo-->
+		</div> <!--Close logo div-->
+		<div class = "steelpanheader"> <!--Steelpanhead div-->
+			<center><img src="images/tenorpanheader.jpg" alt="Tenor Pan 1" width= "640px"><center> <!--Hidden tenor pan image-->
+		</div> <!--Close steelpanheader div-->
+		<div class= "navigation"> <!--Div for navigation-->
+			<nav class="vertical"> <!--Div Vertical-->
+				<ul> <!--Unordered list for navigation bar-->
+					<li><a href="home.html">Home</a></li> <!--Home page link-->
 					<br>
-					<li><a href="#">Steel Pans</a>
+					<li><a href="#">Steel Pans</a> <!--Steel pan link-->
 						<ul>
-							<li><a href="tenorpan.html">Tenor Pan</a></li>
-							
-							<li> <a href="basspan.html">Bass Pan</a></li>
+							<li><a href="tenorpan.html">Tenor Pan</a></li> <!--Tenor pan link-->
 						</ul>
 					</li>
 					<br>
-					<li><a href="">Contact</a></li>
+					<li><a href="contact.html">Contact</a></li> <!--Contact link-->
 					<br>
-					<li><a href="">About Us</a></li>
-				</ul>
-			</nav>
-		</div>
+					<li><a href="about.html">About Us</a></li> <!--About us link-->
+				</ul> <!--Close unordered list for navigation bar-->
+			</nav><!--Close nav-->
+		</div><!--Close navigation-->
 		
-		<div class = "tenor">
-			<div class = "blank">
-			</div>
-			<div class = "tenorpan">
-				<img src="images/tenorpan.jpeg"  width= "350px" height= "350px">
+		<div class = "tenor"> <!--Div to hold video and pan notes-->
+			<div class = "blank"> <!--Div for video-->
+				<center><video id = "myVideo" width="500" controls> <!--Video controls-->
+						<source src="video/Steelpan.mp4" type="video/mp4"> <!--Location of video and video type-->
+						<source src="video/Steelpan.ogg" type="video/ogg"> <!--Location of video and video type-->
+					</video><center> 
+			</div> <!--Close div blank-->
+			<div class = "tenorpan"> <!--Holds hidden tenor pan image inside div-->
+				<img src="images/tenorpan.jpeg"  width= "350px" height= "350px" style= "display: none"> <!--Hidden tenor pan image-->
 				<br>
-			    <br>                                 
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select a Note
+			    <br>  
+				<br>
+			    <br>
+				<br>
+			    <br>
+				<br>
+			    <br>
+				<br>
+			    <br>
+				<br>
+			    <br>
+				<br>
+			    <br>
+				<br>
+			    <br>
+				
+				<div class="dropdown"> <!--Div pan notes-->
+					<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select a Note 
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						<audio id="sound1" src="tenoraudio/fsharp4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound1').play();">F#4
-						</button>	
+						<button onclick="setCurTime()" type="button">F#4</button> <!--Pan note F4#-->
 	
-						<audio id="sound2" src="tenoraudio/b4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound2').play();">B4
-						</button>
-		
-						<audio id="sound3" src="tenoraudio/e4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound3').play();">E4
-						</button>
+						<button onclick="setCurTime1()" type="button">B4</button> <!--Pan note B4-->
+						
+						<button onclick="setCurTime2()" type="button">E4</button> <!--Pan note E4-->
   
-						<audio id="sound4" src="tenoraudio/a4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound4').play();">A4
-						</button>
+						<button onclick="setCurTime3()" type="button">A4</button> <!--Pan note A4-->
 						
-						<audio id="sound5" src="tenoraudio/d4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound5').play();">D4
-						</button>
+						<button onclick="setCurTime4()" type="button">D4</button> <!--Pan note D4-->
 						
-						<audio id="sound6" src="tenoraudio/g4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound6').play();">G4
-						</button>
+						<button onclick="setCurTime5()" type="button">G4</button> <!--Pan note G4-->
 						
-						<audio id="sound7" src="tenoraudio/c4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound7').play();">C4
-						</button>
+						<button onclick="setCurTime6()" type="button">C4</button> <!--Pan note C4-->
 						
-						<audio id="sound8" src="tenoraudio/f4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound8').play();">F4
-						</button>
+						<button onclick="setCurTime7()" type="button">F4</button> <!--Pan note F4-->
 						
-						<audio id="sound9" src="tenoraudio/bb4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound9').play();">Bb4
-						</button>
+						<button onclick="setCurTime8()" type="button">Bb4</button> <!--Pan note Bb4-->
 						
-						<audio id="sound10" src="tenoraudio/eb4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound10').play();">Eb4
-						</button>
+						<button onclick="setCurTime9()" type="button">Eb4</button> <!--Pan note Eb4-->
 						
-						<audio id="sound11" src="tenoraudio/gsharp4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound11').play();">G#4
-						</button>
+						<button onclick="setCurTime10()" type="button">G#4</button> <!--Pan note G#4-->
 						
-						<audio id="sound12" src="tenoraudio/csharp4.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound12').play();">C#4
-						</button>
-						
-						<audio id="sound13" src="tenoraudio/fsharp3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound13').play();">F#3
-						</button>	
-	
-						<audio id="sound14" src="tenoraudio/b3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound14').play();">B3
-						</button>
+						<button onclick="setCurTime11()" type="button">C#4</button> <!--Pan note C#4-->
+						 
+						<button onclick="setCurTime12()" type="button">F#3</button>	<!--Pan note F#3-->
+	 
+						<button onclick="setCurTime13()" type="button">B3</button> <!--Pan note B3-->
 		
-						<audio id="sound15" src="tenoraudio/e3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound15').play();">E3
-						</button>
+						<button onclick="setCurTime14()" type="button">E3</button> <!--Pan note E3-->
   
-						<audio id="sound16" src="tenoraudio/a3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound16').play();">A3
-						</button>
+						<button onclick="setCurTime15()" type="button">A3</button> <!--Pan note A3-->
 						
-						<audio id="sound17" src="tenoraudio/d3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound17').play();">D3
-						</button>
+						<button onclick="setCurTime16()" type="button">D3</button> <!--Pan note D3-->
 						
-						<audio id="sound18" src="tenoraudio/g3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound18').play();">G3
-						</button>
+						<button onclick="setCurTime17()" type="button">G3</button> <!--Pan note G3-->
 						
-						<audio id="sound19" src="tenoraudio/c3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound19').play();">C3
-						</button>
+						<button onclick="setCurTime18()" type="button">C3</button> <!--Pan note C3-->
 						
-						<audio id="sound20" src="tenoraudio/f3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound20').play();">F3
-						</button>
+						<button onclick="setCurTime19()" type="button">F3</button> <!--Pan note F3-->
 						
-						<audio id="sound21" src="tenoraudio/bb3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound21').play();">Bb3
-						</button>
+						<button onclick="setCurTime20()" type="button">Bb3</button> <!--Pan note Bb3-->
 						
-						<audio id="sound22" src="tenoraudio/eb3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound22').play();">Eb3
-						</button>
+						<button onclick="setCurTime21()" type="button">Eb3</button> <!--Pan note Eb3-->
 						
-						<audio id="sound23" src="tenoraudio/gsharp3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound23').play();">G#3
-						</button>
+						<button onclick="setCurTime22()" type="button">G#3</button> <!--Pan note G#3-->
 						
-						<audio id="sound24" src="tenoraudio/csharp3.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound24').play();">C#3
-						</button>
+						<button onclick="setCurTime23()" type="button">C#3</button> <!--Pan note C#3-->
 						
-						<audio id="sound25" src="tenoraudio/csharp2.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound25').play();">C#2
-						</button>
+						<button onclick="setCurTime24()" type="button">C#2</button> <!--Pan note C#2-->
 						
-						<audio id="sound26" src="tenoraudio/e2.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound26').play();">E2
-						</button>
+						<button onclick="setCurTime25()" type="button">E2</button> <!--Pan note E2-->
 						
-						<audio id="sound27" src="tenoraudio/d2.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound27').play();">D2
-						</button>
+						<button onclick="setCurTime26()" type="button">D2</button> <!--Pan note D2-->
 						
-						<audio id="sound28" src="tenoraudio/c2.wav" preload="auto"></audio>
-						<button onclick="document.getElementById('sound28').play();">C2
-						</button>
+						<button onclick="setCurTime27()" type="button">C2</button> <!--Pan note C2-->
 						
+						<button onclick="setCurTime28()" type="button">Eb2</button> <!--Pan note Eb2-->
 					</ul>
-				</div>
-			</div>
-			</div> 
-	</body>
-</html>
+				</div> <!--End pan notes-->
+			</div> <!--End tenor pan-->
+			</div> <!--End tenor-->
+				<script>
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime() { <!--Sets current time-->
+					vid.currentTime=124;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime1() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime1() { <!--Sets current time-->
+					vid.currentTime=17;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime2() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime2() { <!--Sets current time-->
+					vid.currentTime=0;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime3() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime3() { <!--Sets current time-->
+					vid.currentTime=6;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime4() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime4() { <!--Sets current time-->
+					vid.currentTime=70;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime5() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime5() { <!--Sets current time-->
+					vid.currentTime=129;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime6() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime6() { <!--Sets current time-->
+					vid.currentTime=53;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime7() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime7() { <!--Sets current time-->
+					vid.currentTime=110;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime8() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime8() { <!--Sets current time-->
+					vid.currentTime=22;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime9() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime9() { <!--Sets current time-->
+					vid.currentTime=95;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime10() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime10() { <!--Sets current time-->
+					vid.currentTime=119;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime11() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime11() { <!--Sets current time-->
+					vid.currentTime=115;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime12() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime12() { <!--Sets current time-->
+					vid.currentTime=99;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime13() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime13() { <!--Sets current time-->
+					vid.currentTime=11;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime14() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime14() { <!--Sets current time-->
+					vid.currentTime=79;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime15() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime15() { <!--Sets current time-->
+					vid.currentTime=0;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime16() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime16() { <!--Sets current time-->
+					vid.currentTime=65;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime17() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime17() { <!--Sets current time-->
+					vid.currentTime=0;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime18() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime18() { <!--Sets current time-->
+					vid.currentTime=48;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime19() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime19() { <!--Sets current time--> 
+					vid.currentTime=105;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime20() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime20() { <!--Sets current time-->
+					vid.currentTime=27;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime21() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime21() { <!--Sets current time-->
+					vid.currentTime=90;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime22() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime22() { <!--Sets current time-->
+					vid.currentTime=115;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+ 
+				function getCurTime23() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime23() { <!--Sets current time-->
+					vid.currentTime=38;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime24() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime24() { <!--Sets current time-->
+					vid.currentTime=32;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime25() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime25() { <!--Sets current time-->
+					vid.currentTime=74;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime26() { <!--Gets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime26() {  <!--Sets current time-->
+					vid.currentTime=59;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime27() { <!--Sets current time-->
+					alert(vid.currentTime);
+				} 
+
+				function setCurTime27() { <!--Sets current time-->
+					vid.currentTime=45;
+				} 
+				var vid = document.getElementById("myVideo"); <!--ID to link button with video-->
+
+				function getCurTime28() {  <!--Sets current time-->
+					alert(vid.currentTime); 
+				} 
+
+				function setCurTime28() { <!--Sets current time-->
+					vid.currentTime=85; 
+				} 
+				</script> 	<!--End script-->		
+	</body> <!--End body-->
+</html> <!--End html-->
